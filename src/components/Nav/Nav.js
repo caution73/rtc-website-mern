@@ -34,13 +34,13 @@ export default function Nav({ user, setUser }) {
       {user ? (
         <Link to="/pages/requests">
           <div className="navLinkContainer">
-            <div className="requestsLink">Request car content</div>
+            <div className="requestsLink">Request Car Content</div>
           </div>
         </Link>
       ) : (
         <Link to="/pages/login" setUser={setUser}>
           <div className="navLinkContainer">
-            <div className="authLink">LogIn</div>
+            <div className="authLink">Request Car Content</div>
           </div>
         </Link>
       )}

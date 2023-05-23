@@ -15,12 +15,15 @@ const RequestSchema = new Schema(
       min: 1910,
       max: 2024,
     },
-    carSubject: {
+    Subject: {
         type: String
     },
-    carNotes: {
+    Notes: {
         type: String
     },
+    UserEmail: {
+      type: String
+    }
   },
   { timestamps: true }
 );

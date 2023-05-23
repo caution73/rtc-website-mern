@@ -9,7 +9,7 @@ export default function AuthPage ({setUser}) {
     return(
         <main className={styles.AuthPage}>
       <div>
-        <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>
+        <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'New to RTC? Sign up here' : 'Click to log in'}</h3>
       </div>
       {showLogin ? <LogInForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
     </main>

@@ -6,10 +6,11 @@ const router = express.Router()
 module.exports = {
     // index,
     create,
+    getAll
    
   };
 
-router.get('/', async (req, res) => {
+async function getAll(req, res) {
     console.log('Index Controller Func. running...');
     try {
       const foundRequest = await Request.find({})
@@ -17,7 +18,7 @@ router.get('/', async (req, res) => {
     } catch (err) {
       res.status(400).send(err);
     }
-  });
+  };
 
 router.get('/new', (req, res) => {
   res.render('requests/New');
@@ -47,12 +48,8 @@ router.get('/new', (req, res) => {
 
   async function create(req, res) {
     try {
-      // Add the user to the database
-      // then()
       const request = await Request.create(req.body)
       console.log("Here be the controller create request:", request)
-      // Yes, we can use res.json to send back just a string
-      // The client code needs to take this into consideration
       res.status(200).send("Success")
     } catch(err) {
       res.status(400).json(err)

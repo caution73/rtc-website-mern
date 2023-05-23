@@ -83,7 +83,7 @@ nav {
   justify-content: left;
   align-items: center;
   z-index: 3;
-  margin-left: 3vw;
+  padding-left: 3vw;
 }
 
 main {
@@ -145,6 +145,7 @@ article {
   padding: 3vh;
   margin-bottom: 2vh;
   border-radius: 5px;
+  margin: 1vh;
 }
 
 footer {
@@ -496,4 +497,22 @@ span {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+.requestsPage {
+  padding-bottom: 3vh;
+}
+
+.requestHistory {
+  display: flex;
+  justify-content: center;
+}
+
+.historyField {
+  background-color: white;
+  width: 80%;
+}
+
+#requestSubmitBtn {
+  text-align: center;
 }

@@ -1,12 +1,18 @@
 import * as requestService from '../../utilities/cars-api'
+import { useNavigate } from 'react-router-dom'
 
 import { useState } from 'react'
 import * as usersService from '../../utilities/users-service'
 
-export default function LoginForm({ setUser }) {
+export default function RequestForm({user}) {
+  const navigate = useNavigate()
     const [credentials, setCredentials] = useState({
         Make: '',
-        Model: ''
+        Model: '',
+        Year: '',
+        Subject: '',
+        Notes: '',
+        UserEmail: user.email
     })
     const [error, setError] = useState('')
 
@@ -21,11 +27,13 @@ export default function LoginForm({ setUser }) {
         // prevent form from being submitted to the server
         evt.preventDefault()
         try {
-            const user = await requestService.addCar(credentials)
+            const car = await requestService.addCar(credentials)
+            navigate('/')
         } catch(err) {
-            setError('Log in failed - Try Again')
+            setError('Request failed - Try Again')
         }
     }
+
 
   return (
     <div>
@@ -55,7 +63,23 @@ export default function LoginForm({ setUser }) {
             onChange={handleChange}
             required
           />
-          <button type="submit">
+            <label>What particular feature of this car do you want to have us cover?</label>
+          <input
+            type="text"
+            name="Subject"
+            value={credentials.Subject}
+            onChange={handleChange}
+            required
+          />
+            <label>Do you or someone you know own or have access to one of these cars? Please explain</label>
+          <input
+            type="text"
+            name="Notes"
+            value={credentials.Notes}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" id="requestSubmitBtn">
             Submit Request
           </button>
         </form>
