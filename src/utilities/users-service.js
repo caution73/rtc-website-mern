@@ -1,4 +1,5 @@
 // Using the (*) will import all of the exports from a file and put it in a object
+import { redirect } from "react-router-dom";
 import * as usersAPI from "./users-api";
 
 export async function signUp(userData) {

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import NewOrderPage from "./pages/NewOrder/NewOrderPage.js";
 import AuthPage from "./pages/Auth/AuthPage.js";
-import OrderHistoryPage from "./pages/OrderHistory/OrderHistoryPage";
 import Nav from "./components/Nav/Nav";
 import { getUser } from "./utilities/users-service";
 import Home from "./pages/Home/Home";
@@ -27,7 +26,7 @@ function App() {
   //   testCall()
   // }, [])
   const [user, setUser] = useState(getUser());
-  console.log("current user", user);
+  console.log("current user:", user);
 
   return (
     <div className="App">
@@ -40,9 +39,9 @@ function App() {
           <Route path="/pages/carreviews" element={<CarReviews />} />
           <Route path="/pages/planyourtrip" element={<PlanYourTrip />} />
           {user ? (
-            <Route path="/pages/requests" element={<Requests />} />
+            <Route path="/pages/requests" element={<Requests user={user} setUser={setUser}/> } />
           ) : (
-            <AuthPage setUser={setUser} />
+            <Route path="/pages/login" element={<AuthPage setUser={setUser} /> } />
           )}
         </Routes>
         <Footer />

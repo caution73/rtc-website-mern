@@ -460,5 +460,33 @@ span {
   justify-content: center;
 }
 
+.requestForm {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vh;
 
+}
 
+.requestForm > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  color: black;
+}
+
+.requestsNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+.requestsNav > * > *{
+  margin-top: 0;
+}
+
+.requestsNav > * {
+  margin-bottom: 0;
+}

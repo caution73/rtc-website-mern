@@ -12,10 +12,8 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 
-// Configure both serve favicon and 
-// 
 
-app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')))
+// app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')))
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Middleware to verify token and assign user object of payload to req.user.
@@ -29,6 +27,7 @@ app.use(require('./config/checkToken'));
 //   });
 
 
+app.use('/api/car', require("./routes/api/car"))
 app.use('/api/users', require("./routes/api/users"))
 
 
