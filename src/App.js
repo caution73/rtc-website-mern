@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      
         <Header user={user} setUser={setUser} />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,7 +45,7 @@ function App() {
           )}
         </Routes>
         <Footer />
-      </div>
+      
     </div>
   );
 }

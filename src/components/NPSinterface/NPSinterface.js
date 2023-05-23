@@ -65,7 +65,7 @@ export default function NPSinterface() {
         <div id="NPSWindow">
             <h3>Search for National Parks</h3>
             <div id="NPSUpper">By State:
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="NPSform">
                     <input list="states" name="searchTerm" onChange={handleChange} autoComplete="off"/>
                     <datalist id="states">
                         <option value="AL" />
