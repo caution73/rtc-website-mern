@@ -1,71 +1,45 @@
-# Getting Started with Create React App
+README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RoadTripCentral (Website)<br>
+This is a webpage that highlights video content featuring exciting automobiles and fantastic scenery. Sit back and enjoy the creative/entertaining content or use the built-in National Park Service interface to learn more about what the wild U.S. has to offer.
 
-## Available Scripts
+Link<br>
+Check out the website here!----> 
 
-In the project directory, you can run:
+Motivation<br>
+I have had a slightly unhealthy obsession with cars since a young age, and over the years that lead me to creating automotive video content that I've shared with the world via Instagram, Facebook, and YouTube. I have always wanted to make a website for this venture (dubbed RoadTripCentral), and I've finally taken the time to make it happen!
 
-### `npm start`
+Screenshots<br>
+![RoadTripCentralHome--Screenshot](public/RoadTripCentralHome--Screenshot.PNG)
+![RoadTripCentralNPS--Screenshot.PNG](public/RoadTripCentralNPS--Screenshot.PNG)
+![RoadTripCentralVideoCarousel--Screenshot.PNG](public/RoadTripCentralVideoCarousel--Screenshot.PNG)
+<br>
+Features<br>
+The newest features for this site (aside from implementing a back end with Express and Mongoose) include a authorization page that only allows logged-in users to submit new content requests to the site.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation<br>
+Visit the GitHub repository at https://github.com/caution73/rtc-website-mern.git, where you can fork the code and/or download the code to your own computer. You will need to create a .env file and include a SECRET (for JWT), a database URL, and an api key for the National Park Service (obtainable for free from the NPS website).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contribute<br>
+If you would like to contribute to the development of this project, I would be thrilled to improve the styling throughout, as well as further develop the NPS page by creating additional search fields for users to obtain other useful information from the API.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Unresolved Problems<br>
+The overall functionality is present, but I would love to make drastic improvements to functionality as well as styling. The main issues I am currently dealing with involve the information table that pops up once the user selects a NPS location in the NPS page. There are several fields that are difficult to populate due to the data structure of the API information. Some CSS issues that I'm working on resolving involve making sure that the page has an adequately responsive design (no overflowing content, create break points, etc.)  New issues involve styling and user-experience involving the Auth page (I want it to "redirect" to another page once logged in/out") and the Requests page (I want to add full CRUD functionality.)
 
-### `npm run build`
+Stretch Goals<br>
+Aspirational improvements for the page include:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Changing the background video (on Home page) to be sourced from the RoadTripCentral YouTube page.
+Expanding the usability of the NPS interface to include additional search fields as well as more conveniently displayed information.
+Adding addional images and videos from the RoadTripCentral social media profiles.
+Refactoring the code to be more efficient and easy-to-read.
+Developing the About page.
+Creating an additional page to present RoadTripCentral video pricing options.
+Creating comment sections or other ways for users to interact with RoadTripCentral/others.
+Include a "favorite" button for either videos or NPS locations that allows a user to save their favorite content.
+Providing full CRUD functionality for the Requests page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# mern-infrastructure
+Credits<br>
+I'd like to thank all those that have helped me debug and test the website (special shout out to Anthony and Annson), as well as those that have taken the time to view the website. I hope that my content has provided you with a memorable experience...and if it hasn't yet, come back to try it later. It will only be improving!# RoadTripCentral-site
