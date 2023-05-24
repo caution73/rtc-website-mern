@@ -4,13 +4,13 @@ import * as carsApi from '../../utilities/cars-api'
 
 
 // use useeffect to fetch from database
-export const getRequests = async () => {
-    try{
-        const foundRequests = await carsApi.getAll({})
-        setRequests(foundRequests)
-    }catch(err){
-    }
-}
+// export const getRequests = async () => {
+//     try{
+//         const foundRequests = await carsApi.getAll({})
+//         setRequests(foundRequests)
+//     }catch(err){
+//     }
+// }
 
 export default function RequestHistory(user) {
     const [requests, setRequests] = useState()
