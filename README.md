@@ -1,10 +1,15 @@
 README
 
-RoadTripCentral (Website)<br>
+Introduction<br>
 This is a webpage that highlights video content featuring exciting automobiles and fantastic scenery. Sit back and enjoy the creative/entertaining content or use the built-in National Park Service interface to learn more about what the wild U.S. has to offer.
 
-Link<br>
-Check out the website here!----> 
+Technologies Used<br>
+This web application was constructed using MERN (Mongoose, Express, React, Node). The "Plan Your Trip" page communicates with a third party API (the National Park Service API) to provide useful information about National Park locations.
+
+Getting Started<br>
+Here's a link to the associated Trello board, which includes to-do lists and wireframes: https://trello.com/b/Rjhssfia/rtc-mern.
+Check out the deployed website here!----> https://rtc-site-mern.onrender.com
+
 
 Motivation<br>
 I have had a slightly unhealthy obsession with cars since a young age, and over the years that lead me to creating automotive video content that I've shared with the world via Instagram, Facebook, and YouTube. I have always wanted to make a website for this venture (dubbed RoadTripCentral), and I've finally taken the time to make it happen!
@@ -23,14 +28,11 @@ Visit the GitHub repository at https://github.com/caution73/rtc-website-mern.git
 Contribute<br>
 If you would like to contribute to the development of this project, I would be thrilled to improve the styling throughout, as well as further develop the NPS page by creating additional search fields for users to obtain other useful information from the API.
 
-Trello Board<br>
-Here's a link to the associated Trello board, which includes to-do lists and wireframes: https://trello.com/b/Rjhssfia/rtc-mern.
-
 
 Unresolved Problems<br>
 The overall functionality is present, but I would love to make drastic improvements to functionality as well as styling. The main issues I am currently dealing with involve the information table that pops up once the user selects a NPS location in the NPS page. There are several fields that are difficult to populate due to the data structure of the API information. Some CSS issues that I'm working on resolving involve making sure that the page has an adequately responsive design (no overflowing content, create break points, etc.)  New issues involve styling and user-experience involving the Auth page (I want it to "redirect" to another page once logged in/out") and the Requests page (I want to add full CRUD functionality.)
 
-Stretch Goals<br>
+Future Enhancements<br>
 Aspirational improvements for the page include:
 
 Changing the background video (on Home page) to be sourced from the RoadTripCentral YouTube page.
