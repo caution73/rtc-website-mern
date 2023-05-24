@@ -1,8 +1,8 @@
-import {useState, setState} from "react"
+import {useState} from "react"
 import TripArticle from "../../components/TripArticle/TripArticle"
 
 export default function RoadTrips() {
-    const [roadTrips, setRoadTrips] = useState()
+    // const [roadTrips, setRoadTrips] = useState()
 
     const trips = [
         {

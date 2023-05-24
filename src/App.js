@@ -1,9 +1,7 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import NewOrderPage from "./pages/NewOrder/NewOrderPage.js";
 import AuthPage from "./pages/Auth/AuthPage.js";
-import Nav from "./components/Nav/Nav";
 import { getUser } from "./utilities/users-service";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";

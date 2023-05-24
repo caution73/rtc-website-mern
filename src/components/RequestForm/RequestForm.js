@@ -2,7 +2,7 @@ import * as requestService from '../../utilities/cars-api'
 import { useNavigate } from 'react-router-dom'
 
 import { useState } from 'react'
-import * as usersService from '../../utilities/users-service'
+// import * as usersService from '../../utilities/users-service'
 
 export default function RequestForm({user}) {
   const navigate = useNavigate()
@@ -28,6 +28,8 @@ export default function RequestForm({user}) {
         evt.preventDefault()
         try {
             const car = await requestService.addCar(credentials)
+            console.log(car)
+            console.log(error)
             navigate('/')
         } catch(err) {
             setError('Request failed - Try Again')

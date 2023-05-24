@@ -1,6 +1,6 @@
-import { useEffect } from "react"
-import { useState, setState } from 'react'
-import * as carsApi from '../../utilities/cars-api'
+
+import { useState } from 'react'
+
 
 
 // use useeffect to fetch from database
@@ -13,7 +13,7 @@ import * as carsApi from '../../utilities/cars-api'
 // }
 
 export default function RequestHistory(user) {
-    const [requests, setRequests] = useState()
+    // const [requests, setRequests] = useState()
 
  
     
