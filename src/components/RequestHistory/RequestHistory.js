@@ -17,9 +17,9 @@ export default function RequestHistory(user) {
 
  
     
-useEffect(() => {
-    getRequests()
-}, [])
+// useEffect(() => {
+//     getRequests()
+// }, [])
 
     console.log("User:",user)
     return(
